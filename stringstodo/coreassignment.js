@@ -1,3 +1,71 @@
+// function removeBlanks(str) {
+//     let newStr = " "
+//     for (let i=0;i<str.length;i++){
+//         if (str[i] !==" "){
+//             newStr += str[i]
+//         }
+//     }
+//     return newStr
+// }
+
+// console.log(removeBlanks("You rStri ngHere"))
+
+// function getDigits(str) {
+//     let newStr =" "
+//     for (let char in str){
+//         if (!isNaN(str[char])){
+//             newStr += str[char]
+            
+//         }
+//     }
+//     console.log(newStr)
+// }
+
+// getDigits("g6o0e3a4t7s5h4i1t7")
+
+// function acronyms(str){
+
+//     let wordArray = str.split(' ')
+//     let acroStr = " "
+//     for(let word in wordArray){
+//         if (wordArray[word].length>0){
+//             acroStr+=wordArray[word][0].toUpperCase()
+//         }
+        
+//     }
+
+//     return acroStr
+// }
+
+// console.log(acronyms("every good boy does fine"))
+
+// function countNonSpaces(str){
+//     let counter =0
+
+//     for(let char in str){
+//         if(str[char]!=" "){
+//             counter++
+//         }
+//     }
+//     return counter
+// }
+
+// console.log(countNonSpaces("Yo what the heck is up!"))
+
+function removeShorterStrings(array,wordLength){
+    let newStr =[]
+    let next=0
+
+    for(let value in array){
+        if(array[value].length>=wordLength){
+            newStr[next++]=(array[value])
+        }
+    }
+    return newStr
+}
+
+console.log(removeShorterStrings(['hello','how','the','heck','are','you','doing'],4))
+
 // class SinglyLinkedList{
 //     constructor(){
 //         this.head = null
@@ -120,70 +188,3 @@
 // console.log(wordArray.join("-"));
 // console.log(wordArray.join(""));
 
-// function removeBlanks(str) {
-//     let newStr = " "
-//     for (let i=0;i<str.length;i++){
-//         if (str[i] !==" "){
-//             newStr += str[i]
-//         }
-//     }
-//     return newStr
-// }
-
-// console.log(removeBlanks("You rStri ngHere"))
-
-// function getDigits(str) {
-//     let newStr =" "
-//     for (let char in str){
-//         if (!isNaN(str[char])){
-//             newStr += str[char]
-            
-//         }
-//     }
-//     console.log(newStr)
-// }
-
-// getDigits("g6o0e3a4t7s5h4i1t7")
-
-// function acronyms(str){
-
-//     let wordArray = str.split(' ')
-//     let acroStr = " "
-//     for(let word in wordArray){
-//         if (wordArray[word].length>0){
-//             acroStr+=wordArray[word][0].toUpperCase()
-//         }
-        
-//     }
-
-//     return acroStr
-// }
-
-// console.log(acronyms("every good boy does fine"))
-
-// function countNonSpaces(str){
-//     let counter =0
-
-//     for(let char in str){
-//         if(str[char]!=" "){
-//             counter++
-//         }
-//     }
-//     return counter
-// }
-
-// console.log(countNonSpaces("Yo what the heck is up!"))
-
-function removeShorterStrings(array,wordLength){
-    let newStr =[]
-    let next=0
-
-    for(let value in array){
-        if(array[value].length>=wordLength){
-            newStr[next++]=(array[value])
-        }
-    }
-    return newStr
-}
-
-console.log(removeShorterStrings(['hello','how','the','heck','are','you','doing'],4))
